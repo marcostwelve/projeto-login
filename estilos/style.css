@@ -1,12 +1,6 @@
 @charset "UTF-8";
 
- /*
-    
-    Verde escuro: #3E6F6B
-    Verde: #3E7C59
-
- */
-
+ /* Variaveis de cores */
  :root {
     --cor01: #3e6f6b;
     --cor02: #3e7c59;
@@ -43,6 +37,8 @@ section#login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
