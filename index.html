@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css" />
     <link rel="stylesheet" href="estilos/media-query.css" />
     <title>Login</title>
@@ -19,15 +20,22 @@
                 <h1>Login</h1>
                 <p>Seja bem vindo(a)! Faça login para acessar a sua conta e poder fazer as configurações do seu ambiente</p>
 
-                <form action="" method="post">
-                    <label for="iemail">E-mail: </label>
-                    <input type="email" name="email" id="iemail" required />
+                <form action="" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="iemail" required placeholder="email@email.com" autocomplete="email" maxlength="25"/>
+                        <label for="iemail">Login </label>
+                    </div>
 
-                    <label for="isenha">Senha: </label>
-                    <input type="password" name="senha" id="isenha" min="8" max="12" required />
+                    <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" minlength="8" maxlength="12" required placeholder="Digite sua senha" autocomplete="current-password"/>
+                        <label for="isenha">Senha </label>
+                    </div>
 
-                    <input type="submit" value="Entrar">
-                    <button type="button">Esqueci a senha</button>
+                    <input type="submit" value="Entrar" />
+                    <input type="reset" value="Limpar" />
+                    <a href="#" class="botao">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
             </div>
         </section>
